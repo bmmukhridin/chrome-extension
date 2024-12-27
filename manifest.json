@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Filter Carrier Options",
+    "version": "1.0",
+    "description": "Removes unnecessary carrier options from the dropdown.",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["remove-options.js"]
+      }
+    ],
+    "permissions": ["scripting"]
+  }
